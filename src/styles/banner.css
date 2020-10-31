@@ -1,0 +1,36 @@
+nav#banner-nav {
+    width: 100vw;
+    border-bottom: 0.3rem solid var(--secondary-color);
+    margin: 1.5rem 0;
+    padding: 0.5rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav#banner-nav h1 {
+    text-align: center;
+}
+
+nav#banner-nav h1 a{
+    font-size: 8rem;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+nav#banner-nav ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+nav#banner-nav ul li {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+nav#banner-nav ul li a {
+    font-size: 2rem;
+    text-decoration: none;
+}
