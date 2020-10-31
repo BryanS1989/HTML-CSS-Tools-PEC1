@@ -1,5 +1,5 @@
 {
-  "name": "HTML-CSS-Tools-PEC1",
+  "name": "html-css-tools-pec1",
   "version": "1.0.0",
   "description": "Pequeño portal de literatura",
   "main": "index.js",
@@ -22,8 +22,11 @@
   },
   "homepage": "https://github.com/BryanS1989/HTML-CSS-Tools-PEC1#readme",
   "devDependencies": {
+    "autoprefixer": "^9.8.6",
     "npm-run-all": "^4.1.5",
     "parcel-bundler": "^1.12.4",
+    "postcss": "^8.1.4",
+    "postcss-modules": "^3.2.2",
     "rimraf": "^3.0.2"
   }
 }
