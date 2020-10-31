@@ -1,3 +1,5 @@
+@import url("./banner.css");
+
 :root {
     --primary-color: #FFFFFF;
     --secondary-color: #FFD700;
@@ -14,43 +16,6 @@
     background-color: var(--third-color);
 }
 
-nav#banner-nav {
-    width: 100vw;
-    border-bottom: .1rem solid var(--secondary-color);
-    margin: 1.5rem 0;
-    padding: 0.5rem;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-nav#banner-nav h1 {
-    text-align: center;
-}
-
-nav#banner-nav h1 a{
-    font-size: 8rem;
-    color: var(--secondary-color);
-    text-decoration: none;
-}
-
-nav#banner-nav ul {
-    list-style: none;
-    display: flex;
-    flex-flow: column wrap;
-}
-
-nav#banner-nav ul li {
-    text-align: center;
-    margin: 0.5rem 0;
-}
-
-nav#banner-nav ul li a {
-    font-size: 2rem;
-    text-decoration: none;
-}
-
 .current-page {
     border-left: 0.1rem solid var(--secondary-color);
     border-right: 0.1rem solid var(--secondary-color);
@@ -61,12 +26,15 @@ nav#banner-nav ul li a {
     color: var(--secondary-color);
 }
 
-section.card-selector {
-    border: 0.1rem solid var(--secondary-color);
+.card-selector {
+    border: 0.3rem solid var(--secondary-color);
+    border-radius: 0.5rem;
     width: 25rem;
 }
 
 .cover-img {
+    border: 0.1rem solid var(--primary-color);
+    border-radius: 1rem;
     height: 50%;
     width: 90%;
 }
