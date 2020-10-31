@@ -1,0 +1,30 @@
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #FFD700;
+    --third-color: #000000;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-size: 10px;
+    margin: 0;
+	padding: 0;
+    border: 0;
+    color: var(--primary-color);
+    background-color: var(--third-color);
+}
+
+nav#banner-nav {
+    width: 100vw;
+    border-bottom: var(--secondary-color);
+}
+
+h1 {
+    font-size: 10rem;
+    text-align: center;
+}
+
+section.card-selector {
+    border: 0.5rem solid var(--secondary-color);
+}
