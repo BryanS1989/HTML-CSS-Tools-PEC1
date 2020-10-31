@@ -1,0 +1,23 @@
+{
+  "name": "HTML-CSS-Tools-PEC1",
+  "version": "1.0.0",
+  "description": "Pequeño portal de literatura",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BryanS1989/HTML-CSS-Tools-PEC1.git"
+  },
+  "keywords": [],
+  "author": "Bryan Steven Agray Londoño",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BryanS1989/HTML-CSS-Tools-PEC1/issues"
+  },
+  "homepage": "https://github.com/BryanS1989/HTML-CSS-Tools-PEC1#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
