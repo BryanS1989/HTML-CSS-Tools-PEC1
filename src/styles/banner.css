@@ -12,8 +12,8 @@ nav#banner-nav h1 {
     text-align: center;
 }
 
-nav#banner-nav h1 a{
-    font-size: 8rem;
+nav#banner-nav h1 a {
+    font-size: 12rem;
     color: var(--primary-color);
     text-decoration: none;
 }
@@ -22,15 +22,13 @@ nav#banner-nav ul {
     list-style: none;
     display: flex;
     flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
 nav#banner-nav ul li {
     text-align: center;
     margin: 0.5rem 0;
-}
-
-nav#banner-nav ul li a {
-    font-size: 2rem;
-    text-decoration: none;
+    width: 80%;
 }

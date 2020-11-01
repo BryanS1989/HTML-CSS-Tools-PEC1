@@ -1,14 +1,37 @@
 @import url("./banner.css");
 
+/*
+    GLOBAL VARIABLES
+    ----------------
+*/
+
 :root {
     --primary-color: #FFD700;
+    --primary-color-alpha: rgba(255, 215, 0, 0.2);
     --secondary-color: #DCDCDC;
     --third-color: #000000;
+    --transparent:  rgba(255, 255, 255, 0)
 }
 
+/*
+    Harry Potter Font Style
+*/
+@font-face {
+    font-family: 'HarryPotter';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Harry P Regular'), url('../fonts/HARRYP__.woff') format('woff');
+}
+
+
+/*
+    CSS RESET
+    ---------
+*/
 * {
     box-sizing: border-box;
     font-size: 10px;
+    font-family: HarryPotter, serif;
     margin: 0;
 	padding: 0;
     border: 0;
@@ -16,25 +39,97 @@
     background-color: var(--third-color);
 }
 
+/*
+    LINKS
+    -----
+*/
+
 .current-page {
     border-left: 0.1rem solid var(--primary-color);
     border-right: 0.1rem solid var(--primary-color);
     border-radius: 0.5rem;
 }
 
-.current-page a{
+.current-page a {
     color: var(--primary-color);
 }
 
+.primary-links {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.primary-links:link,
+.primary-links:visited,
+.primary-links:focus {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.primary-links:hover,
+.primary-links:active {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/*
+    INDEX
+    -----
+*/
+article#category-selectors {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+/*
+    CARDS SELECTORS
+    ---------------
+*/
+
 .card-selector {
     border: 0.3rem solid var(--primary-color);
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     width: 25rem;
+    max-height: 50rem;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+    text-decoration: none;
+}
+
+.card-selector:hover {
+    transform: scale(1.1);
+    background-color: var(--primary-color-alpha);
+}
+
+
+/* Cover image */
+.card-selector figure {
+    text-align: center;
+    background-color: var(--transparent);
+}
+
+
+/* Category Name */
+.card-selector p {
+    text-align: center;
+    display: inline-block;
+    font-size: 3.5rem;
+    width: 85%;
+    margin: 1rem 0 0 0;
+    background-color: var(--transparent);
 }
 
 .cover-img {
     border: 0.1rem solid var(--secondary-color);
     border-radius: 1rem;
-    height: 50%;
     width: 90%;
+    max-height: 35rem;
 }
