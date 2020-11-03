@@ -67,6 +67,25 @@
     text-decoration: none;
 }
 
+.secondary-links {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+.secondary-links:link,
+.secondary-links:visited,
+.secondary-links:focus {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.secondary-links:hover,
+.secondary-links:active {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
 /*
     NAV BAR
     -------
@@ -120,7 +139,14 @@ nav#banner-nav ul li {
     INDEX
     -----
 */
-article#category-selectors {
+h2 {
+    color: var(--primary-color);
+    font-size: 5rem;
+    margin-top: 2rem;
+}
+
+article#category-selectors,
+article#author {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -128,15 +154,35 @@ article#category-selectors {
     padding: 1rem 0;
 }
 
-article#category-selectors .section-text {
-    width: 25rem;
+article#category-selectors section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section-text {
+    width: 35rem;
     font-size: 2rem;
     text-align: center;
     font-family: 'Architects Daughter', cursive;
     margin-bottom: 1.5rem;
 }
 
+blockquote {
+    font-size: 3.5rem;
+    background-color: var(--primary-color-alpha);
+    quotes: "\201C""\201D""\2018""\2019";
+    padding: 1rem;
+}
 
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
+}
 
 /*
     CARDS SELECTORS
@@ -165,7 +211,7 @@ article#category-selectors .section-text {
 
 
 /* Cover image */
-.card-selector figure {
+figure {
     text-align: center;
     background-color: var(--transparent);
 }
