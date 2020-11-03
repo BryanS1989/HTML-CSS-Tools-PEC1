@@ -12,6 +12,13 @@
 }
 
 /*
+    FONTS
+    -----
+*/
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+
+/*
     Harry Potter Font Style
 */
 @font-face {
@@ -121,6 +128,16 @@ article#category-selectors {
     padding: 1rem 0;
 }
 
+article#category-selectors .section-text {
+    width: 25rem;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    margin-bottom: 1.5rem;
+}
+
+
+
 /*
     CARDS SELECTORS
     ---------------
@@ -131,7 +148,7 @@ article#category-selectors {
     border-radius: 1rem;
     width: 25rem;
     max-height: 50rem;
-    margin: 1.5rem 0;
+    margin: 2rem 0;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
