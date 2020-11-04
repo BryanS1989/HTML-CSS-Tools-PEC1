@@ -45,6 +45,37 @@
 }
 
 /*
+    HEADERS
+    -------
+*/
+h1 {
+    text-align: center;
+}
+
+h1 a {
+    font-size: 12rem;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+h3 {
+    color: var(--secondary-color);
+    border-bottom: 0.2rem solid var(--primary-color);
+    font-size: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/*
     LINKS
     -----
 */
@@ -100,16 +131,6 @@ nav#banner-nav {
     justify-content: center;
 }
 
-nav#banner-nav h1 {
-    text-align: center;
-}
-
-nav#banner-nav h1 a {
-    font-size: 12rem;
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
 nav#banner-nav ul {
     list-style: none;
     display: flex;
@@ -139,12 +160,6 @@ nav#banner-nav ul li {
     INDEX
     -----
 */
-h2 {
-    color: var(--primary-color);
-    font-size: 5rem;
-    margin-top: 2rem;
-}
-
 article#category-selectors,
 article#author {
     display: flex;
@@ -170,7 +185,7 @@ article#category-selectors section {
 }
 
 blockquote {
-    font-size: 3.5rem;
+    font-size: 3rem;
     background-color: var(--primary-color-alpha);
     quotes: "\201C""\201D""\2018""\2019";
     padding: 1rem;
@@ -196,7 +211,7 @@ blockquote::after {
     max-height: 50rem;
     margin: 2rem 0;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     align-items: center;
     justify-content: space-around;
     padding: 1.5rem 0;
@@ -220,7 +235,7 @@ figure {
     border: 0.1rem solid var(--secondary-color);
     border-radius: 1rem;
     width: 90%;
-    max-height: 35rem;
+    height: 35rem;
 }
 
 /* Category Name */
@@ -244,4 +259,40 @@ ul#saga-harry-potter {
     align-items: center;
     justify-content: space-around;
     padding: 1rem 0;
+}
+
+/* 
+    BOOK DETAIL PAGES
+    -----------------
+*/
+dl {
+    margin-left: 2rem;
+}
+
+dt {
+    color: var(--primary-color);
+    font-size: 3rem;
+    margin-top: 1.5rem;
+}
+
+dd {
+    color: var(--secondary-color);
+    font-size: 3rem;
+}
+
+article.book-info {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+article.book-info p {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2rem;
+    margin: 1.5rem;
+    text-align: center;
+}
+
+iframe {
+    width: 100vw;
+    margin: 1.5rem 0;
 }
