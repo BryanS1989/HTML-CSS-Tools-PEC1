@@ -252,10 +252,11 @@ figure {
     HARRY POTTER
     ------------
 */
-ul#saga-harry-potter {
+ul#saga-harry-potter,
+ul#otros-libros {
     list-style: none;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     align-items: center;
     justify-content: space-around;
     padding: 1rem 0;
@@ -295,4 +296,19 @@ article.book-info p {
 iframe {
     width: 100vw;
     margin: 1.5rem 0;
+}
+
+/*
+    Te puede interesar
+*/
+ul.similar-pages {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+ul.similar-pages li {
+    margin: 1rem 0;
 }
