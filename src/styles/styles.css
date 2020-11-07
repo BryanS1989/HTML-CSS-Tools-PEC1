@@ -107,14 +107,13 @@ h3 {
 .secondary-links:link,
 .secondary-links:visited,
 .secondary-links:focus {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-decoration: none;
 }
 
 .secondary-links:hover,
 .secondary-links:active {
-    color: var(--primary-color);
-    text-decoration: none;
+    color: var(--secondary-color);
 }
 
 /*
@@ -143,7 +142,7 @@ nav#banner-nav ul {
 nav#banner-nav ul li {
     text-align: center;
     margin: 0.5rem 0;
-    width: 80%;
+    width: 55%;
 }
 
 .current-page {
@@ -187,6 +186,8 @@ article#category-selectors section {
 blockquote {
     font-size: 3rem;
     background-color: var(--primary-color-alpha);
+    border-top: 0.1rem solid var(--secondary-color);
+    border-bottom: 0.1rem solid var(--secondary-color);
     quotes: "\201C""\201D""\2018""\2019";
     padding: 1rem;
 }
@@ -236,6 +237,10 @@ figure {
     border-radius: 1rem;
     width: 90%;
     height: 35rem;
+}
+
+.book-info .cover-img {
+    width: 65%;
 }
 
 /* Category Name */
@@ -295,6 +300,7 @@ article.book-info p {
 
 iframe {
     width: 100vw;
+    height: 15rem;
     margin: 1.5rem 0;
 }
 
