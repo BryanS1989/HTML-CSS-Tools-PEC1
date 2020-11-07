@@ -44,6 +44,13 @@
     background-color: var(--third-color);
 }
 
+@media (min-width: 769px) {
+    main article {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
 /*
     HEADERS
     -------
@@ -155,6 +162,14 @@ nav#banner-nav ul li {
     color: var(--primary-color);
 }
 
+@media (min-width: 769px) {
+    nav#banner-nav ul {
+        flex-flow: row;
+        width: 50%;
+    }
+}
+
+
 /*
     INDEX
     -----
@@ -170,7 +185,7 @@ article#author {
 
 article#category-selectors section {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     align-items: center;
     justify-content: space-around;
 }
@@ -199,6 +214,56 @@ blockquote::before {
 blockquote::after {
     content: close-quote;
 }
+
+
+@media (min-width: 769px) {
+    article#category-selectors {
+        flex-flow: row wrap;
+    }
+
+    article#author {
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding: 0 2rem;
+    }
+
+    article#author figure {
+        flex: 1;
+        margin: 2rem 0;
+    }
+
+    article#category-selectors h2,
+    article#author h2 {
+        min-width: 100%;
+    }
+
+    article#category-selectors section {
+        flex: 1;
+        min-width: 10rem;
+        height: 85rem;
+        justify-content: start;
+    }
+
+    .section-text {
+        text-align: left;
+    }
+
+    #author .section-text:nth-child(3) {
+        flex: 2;
+        padding: 0 5rem;
+    }
+
+    #author .section-text:nth-last-child(2),
+    #author blockquote  {
+        flex: 2 100%;
+        padding: 0 5rem;
+    }
+
+    #author blockquote {
+        text-align: center;
+    }
+}
+
 
 /*
     CARDS SELECTORS
@@ -251,6 +316,20 @@ figure {
     width: 85%;
     margin: 1rem 0 0 0;
     background-color: var(--transparent);
+}
+
+@media (min-width: 769px) {
+    .card-selector {
+        width: 25rem;
+        height: 50rem;
+        margin: 2.5rem 0;
+        padding: 1rem 0;
+    }
+
+    #author .cover-img {
+        width: 25rem;
+        height: 35rem;
+    }
 }
 
 /*
